@@ -1,0 +1,172 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: clamp(70px, 10vw, 80px);
+  background: rgba(0, 31, 139, 1);
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+}
+
+.header div {
+  margin-left: 12px;
+  width: clamp(60px, 8vw, 60px);
+  height: clamp(60px, 8vw, 60px);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(23px, 4vw, 24px);
+  font-weight: 500;
+}
+.header img {
+  display: none;
+}
+
+.header h1 {
+  font-size: clamp(22px, 4vw, 24px);
+  font-weight: 500;
+  color: white;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+.note_body {
+  width: 100%;
+  height: calc(100vh - 240px);
+  overflow-y: auto;
+  padding: 15px 20px 0 20px;
+  background: rgba(218, 229, 245, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.note_body::-webkit-scrollbar {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  width: 10px;
+}
+
+.note_body::-webkit-scrollbar-thumb {
+  background: rgb(203, 196, 196);
+  border-radius: 10px;
+}
+.note_content {
+  margin-top: 10px;
+  width: 98%;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.note_content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.035em;
+  color: rgba(53, 53, 53, 1);
+}
+.date_time {
+  margin-top: 10px;
+  display: flex;
+  justify-content: right;
+}
+.date_time > span {
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: rgba(53, 53, 53, 1);
+}
+.footer {
+  width: 100%;
+  height: 160px;
+  background: rgba(0, 31, 139, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer div {
+  width: 97%;
+  height: 87%;
+  margin: auto;
+  border-radius: 7px;
+  padding: 10px 10px 5px 10px;
+  background-color: white;
+}
+.footer textarea {
+  background-color: white;
+  color: rgba(53, 53, 53, 1);
+  width: 100%;
+  height: 70%;
+  border: none;
+  resize: none;
+  font-size: clamp(9px, 4vw, 18px);
+}
+.footer textarea:focus {
+  outline: none;
+}
+
+.footer div textarea::-webkit-scrollbar {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  width: 10px;
+}
+
+.footer div textarea::-webkit-scrollbar-thumb {
+  background: rgb(203, 196, 196);
+  border-radius: 10px;
+}
+.footer div .btn {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: transparent;
+}
+.btn button {
+  background-color: transparent;
+}
+.btn button img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+  .header img {
+    display: flex;
+    margin-left: 10px;
+    width: 20px;
+    height: 15px;
+  }
+  .header {
+    width: 100%;
+    gap: 10px;
+  }
+  .header div {
+    margin-left: 0px;
+  }
+  .footer {
+    width: 100%;
+    height: 130px;
+  }
+
+  .note_body {
+    width: 100%;
+    height: calc(100vh - 160px);
+    padding: 10px 10px 0 10px;
+  }
+}

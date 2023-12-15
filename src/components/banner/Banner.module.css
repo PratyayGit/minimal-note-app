@@ -1,0 +1,35 @@
+.banner_section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner_section img {
+  width: 80%;
+  height: 25vw;
+}
+.banner_section h1 {
+  font-size: clamp(20px, 4vw, 35px);
+  font-weight: 500;
+  line-height: 41px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.banner_section p {
+  color: rgba(41, 41, 41, 1);
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.encryption {
+  margin-top: 40px;
+}
+.encryption img {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}

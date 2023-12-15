@@ -1,0 +1,98 @@
+.popUp_overlays {
+  width: clamp(345px, 50vw, 700px);
+  height: clamp(250px, 10vh, 300px);
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+.popUp_overlays h2 {
+  font-size: clamp(20px, 3vw, 29px);
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: 0.035em;
+  text-align: left;
+}
+.name_input {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name_input h2 {
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.035em;
+  text-align: left;
+}
+.name_input input {
+  width: 65%;
+  height: clamp(35px, 5vw, 45px);
+  padding-left: 20px;
+  border-radius: 22px;
+  border: 2px solid rgba(204, 204, 204, 1);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0.035em;
+  background-color: white;
+  color: rgb(24, 23, 23);
+}
+.colour_input {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.colour_input h2 {
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.035em;
+  text-align: left;
+}
+.colour_input div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colour_input div button {
+  width: clamp(20px, 3vw, 40px);
+  height: clamp(20px, 3vw, 40px);
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.colour_input div button:focus {
+  width: clamp(20px, 3vw, 45px);
+  border: 1px solid rgb(149, 13, 190);
+  box-shadow: 0px 2px 5px 1px rgb(182, 174, 174);
+}
+.button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+}
+.button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 30px;
+  border-radius: 11px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .button {
+    justify-content: center;
+  }
+  .button button {
+    width: 150px;
+  }
+}
